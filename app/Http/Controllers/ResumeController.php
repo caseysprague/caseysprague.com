@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Resume;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ResumeController extends Controller
 {
@@ -19,5 +20,10 @@ class ResumeController extends Controller
         return view('resume-print')->with([
             'resume' => Resume::first(),
         ]);
+    }
+
+    public function download()
+    {
+        return Storage::disk('public')->download('Casey Sprague - Resume.pdf');
     }
 }

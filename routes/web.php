@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/resume/print', 'ResumeController@print');
+Route::get('/resume/download', 'ResumeController@download');
