@@ -27,8 +27,14 @@
                         </g>
                     </svg>
                     <h2 class="mb-6 font-light text-xl sm:text-2xl text-grey-dark leading-normal">
-                        CTO @ <a class="text-blue no-underline" href="https://www.thera-link.com">thera-LINK</a>. Developer, pilot, Agile coach. <a class="text-blue no-underline" href="https://zealitconsultants.com">Zeal</a> board of advisors.
+                        CTO @ <a class="text-blue hover:text-blue-dark no-underline" href="https://www.thera-link.com">thera-LINK</a>. Developer, pilot, Agile coach. <a class="text-blue hover:text-blue-dark no-underline" href="https://zealitconsultants.com">Zeal</a> board of advisors.
                     </h2>
+                    <div>
+                        <a class="text-blue hover:text-blue-dark no-underline mr-4" href="{{ url('/resume/download') }}">Resume</a>
+                        <a class="text-blue hover:text-blue-dark no-underline mr-4" href="https://github.com/caseysprague">GitHub</a>
+                        <a class="text-blue hover:text-blue-dark no-underline mr-4" href="https://twitter.com/caseysprague">Twitter</a>
+                        <a class="text-blue hover:text-blue-dark no-underline mr-4" href="https://www.linkedin.com/in/casey-sprague-3a3b4041/">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
