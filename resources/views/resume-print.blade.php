@@ -65,6 +65,9 @@
                     <div class="ml-4 mt-2">{{ $job->description }}</div>
                     @endforeach
                 </div>
+                @if($loop->iteration % 2 === 0)
+                    <div class="page-break"></div>
+                @endif
                 @endforeach
             </div>
         </div>
