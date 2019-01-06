@@ -15,5 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/blog', 'BlogController@index');
 Route::get('/resume/print', 'ResumeController@print');
 Route::get('/resume/download', 'ResumeController@download');
