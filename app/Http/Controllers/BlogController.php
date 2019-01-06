@@ -23,4 +23,24 @@ class BlogController extends Controller
             'posts' => $posts
         ]);
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($slug)
+    {
+        $post = WinkPost::with('tags')
+            ->live()
+            ->whereSlug($slug)
+            ->first();
+
+        abort_unless($post, 404);
+
+        return view('blog.show', [
+            'post' => $post,
+        ]);
+    }
 }

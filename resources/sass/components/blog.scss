@@ -1,0 +1,55 @@
+.post-body {
+    & > * {
+        @apply .my-8;
+    }
+
+    & > *:first-child {
+        @apply .mt-0;
+    }
+
+    & > *:last-child {
+        @apply .mb-0;
+    }
+
+    a {
+        @apply .no-underline .font-semibold .text-blue;
+
+        &:hover {
+            @apply .text-blue-dark;
+        }
+    }
+
+    hr {
+        @apply .border-t .border-grey-light;
+    }
+
+    blockquote {
+        @apply .border-l-4 .border-grey-light .pl-4 .font-semibold;
+    }
+
+    pre {
+        @apply .font-mono .overflow-x-auto .text-sm .text-grey-light .bg-grey-darkest .rounded-lg .p-4;
+    }
+
+    h1 {
+        @apply .text-2xl .text-grey-darkest .font-extrabold .mb-16;
+    }
+
+    h2 {
+        @apply .text-xl .text-grey-darkest .font-extrabold .my-12;
+    }
+
+    h3 {
+        @apply .text-lg .text-grey-darkest .font-bold .my-10;
+    }
+
+    .embedded_image {
+        &[data-layout='wide'] {
+            @apply -mx-20 my-10;
+        }
+
+        p {
+            @apply .text-grey-dark .text-sm;
+        }
+    }
+}

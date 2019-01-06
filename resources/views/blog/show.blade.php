@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('title', "{$post->title} - " . config('app.name'))
+
+@section('head')
+    @parent
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css">
+@endsection
+
 @section('body')
     <body>
         <div class="flex flex-col">
@@ -37,27 +44,15 @@
                     </div>
                 </div>
                 <div class="md:px-8 mt-32 w-full max-w-md">
+                    {{-- <div class="text-grey-darkest text-base leading-normal mb-8">
+                        <a href="{{ url('/blog') }}" class="text-grey-darker hover:text-blue text-sm no-underline">← Back</a>
+                    </div> --}}
+                    <div class="block text-grey-dark uppercase font-semibold text-xs tracking-wide mb-2">{{ $post->publish_date->format('F j, Y') }}</div>
                     <h1 class="text-2xl font-extrabold text-grey-darkest mb-16">
-                        Blog Posts
+                        {{ $post->title }}
                     </h1>
-                    @foreach ($posts as $post)
-                        <div class="my-6 hover:bg-grey-lighter rounded-lg p-4 -mx-4">
-                            <a href="{{ url("/blog/{$post->slug}") }}" class="no-underline">
-                                <div class="block text-grey-dark uppercase font-semibold text-xs tracking-wide mb-2">{{ $post->publish_date->format('F j, Y') }}</div>
-                                <h3 class="text-lg text-grey-darkest font-bold">{{ $post->title }}</h3>
-                                @if ($post->excerpt)
-                                    <p class="text-grey-darkest text-base leading-normal mt-2">{{ $post->excerpt }}</p>
-                                @endif
-                            </a>
-                        </div>
-                    @endforeach
-                    <div class="flex justify-between">
-                        @if ($posts->previousPageUrl())
-                            <a href="{{ $posts->previousPageUrl() }}" class="mt-8 text-grey-darker hover:text-blue text-sm no-underline">← Back</a>
-                        @endif
-                        @if ($posts->nextPageUrl())
-                            <a href="{{ $posts->nextPageUrl() }}" class="mt-8 text-grey-darker hover:text-blue text-sm no-underline">More posts →</a>
-                        @endif
+                    <div class="post-body my-6 py-4 text-grey-darkest text-base leading-loose">
+                        {!! $post->body !!}
                     </div>
                 </div>
             </div>
