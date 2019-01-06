@@ -19,6 +19,8 @@ class BlogController extends Controller
             ->orderBy('publish_date', 'DESC')
             ->simplePaginate(8);
 
+        abort_unless($posts->count() > 0, 404);
+
         return view('blog.index', [
             'posts' => $posts
         ]);
