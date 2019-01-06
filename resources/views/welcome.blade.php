@@ -26,6 +26,9 @@
                         CTO @ <a class="text-blue hover:text-blue-dark no-underline" href="https://www.thera-link.com">thera-LINK</a>. Developer, pilot, Agile coach. <a class="text-blue hover:text-blue-dark no-underline" href="https://zealitconsultants.com">Zeal</a> board of advisors.
                     </h2>
                     <div class="flex flex-col md:flex-row">
+                        @if($showBlog)
+                            <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="{{ url('/blog') }}">Blog</a>
+                        @endif
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="{{ url('/resume/download') }}">Resume</a>
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://github.com/caseysprague">GitHub</a>
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://twitter.com/caseysprague">Twitter</a>
