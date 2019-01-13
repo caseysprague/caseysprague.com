@@ -11,7 +11,7 @@
 @endsection
 
 @section('body')
-    <body>
+    <body id="app">
         <div class="flex flex-col">
             <div class="topography border-t-8 border-blue min-h-screen flex items-center font-sans">
                 <div class="mx-auto my-8 py-16 px-8 sm:px-12">

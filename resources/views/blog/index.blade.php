@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('body')
-    <body>
+    <body id="app">
         <div class="flex flex-col">
             {{-- <div class="border-b border-grey-light flex sm:flex-row flex-col justify-between items-center p-4 bg-white font-sans">
                 <svg width="213px" height="36px" viewBox="0 0 213 36" xmlns="http://www.w3.org/2000/svg">

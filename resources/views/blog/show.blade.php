@@ -9,7 +9,7 @@
 
 @section('body')
     <body>
-        <div class="flex flex-col">
+        <div class="flex flex-col" id="app">
             {{-- <div class="border-b border-grey-light flex sm:flex-row flex-col justify-between items-center p-4 bg-white font-sans">
                 <svg width="213px" height="36px" viewBox="0 0 213 36" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo" transform="translate(-1.000000, -1.000000)">
