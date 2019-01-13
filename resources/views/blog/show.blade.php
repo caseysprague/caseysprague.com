@@ -2,11 +2,6 @@
 
 @section('title', "{$post->title} - " . config('app.name'))
 
-@section('head')
-    @parent
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/atom-one-dark.min.css">
-@endsection
-
 @section('body')
     <body>
         <div class="flex flex-col" id="app">
