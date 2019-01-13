@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f71dafc8a0be154459bd53ee164e3ce1",
+    "content-hash": "a1fc11b600b01f50940d8ce673b47167",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2363,16 +2363,16 @@
         },
         {
             "name": "writingink/wink",
-            "version": "v0.0.7",
+            "version": "v0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/writingink/wink.git",
-                "reference": "93972ececafa7ea88574db230d27411b92d368e0"
+                "reference": "1c72a4626a122fc3999886a8ed70f1ab2794755c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/writingink/wink/zipball/93972ececafa7ea88574db230d27411b92d368e0",
-                "reference": "93972ececafa7ea88574db230d27411b92d368e0",
+                "url": "https://api.github.com/repos/writingink/wink/zipball/1c72a4626a122fc3999886a8ed70f1ab2794755c",
+                "reference": "1c72a4626a122fc3999886a8ed70f1ab2794755c",
                 "shasum": ""
             },
             "require": {
@@ -2411,7 +2411,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-11-21T17:13:32+00:00"
+            "time": "2019-01-11T08:32:41+00:00"
         }
     ],
     "packages-dev": [
