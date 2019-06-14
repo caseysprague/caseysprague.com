@@ -32,7 +32,7 @@
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="{{ url('/resume/download') }}">Resume</a>
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://github.com/caseysprague">GitHub</a>
                         <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://twitter.com/caseysprague">Twitter</a>
-                        <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://www.linkedin.com/in/casey-sprague-3a3b4041/">LinkedIn</a>
+                        <a class="text-blue hover:text-blue-dark no-underline mt-2 md:mt-0 mr-4" href="https://www.linkedin.com/in/caseysprague">LinkedIn</a>
                     </div>
                 </div>
             </div>
