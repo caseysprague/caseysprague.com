@@ -23,7 +23,8 @@
                         </g>
                     </svg>
                     <h2 class="mb-6 font-light text-xl sm:text-2xl text-grey-dark leading-normal">
-                        CTO @ <a class="text-blue hover:text-blue-dark no-underline" href="https://www.thera-link.com">thera-LINK</a>. Developer, pilot, Agile coach. <a class="text-blue hover:text-blue-dark no-underline" href="https://zealitconsultants.com">Zeal</a> board of advisors.
+                        <p>Developer, entrepreneur, investor. Scrum pilot. Actual pilot.</p>
+                        <p class="mt-6 sm:mt-4 md:mt-2 text-base">Previously CTO & Technical Co-Founder @ <a class="text-blue hover:text-blue-dark no-underline" href="https://www.thera-link.com">thera-LINK</a>.</p>
                     </h2>
                     <div class="flex flex-col md:flex-row">
                         @if($showBlog)
