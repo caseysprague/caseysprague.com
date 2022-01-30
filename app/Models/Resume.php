@@ -1,7 +1,12 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Models\ResumeJob;
+use App\Models\ResumeSkill;
+use App\Models\ResumeCompany;
+use App\Models\ResumeEducation;
+use App\Models\ResumeCertification;
 use Illuminate\Database\Eloquent\Model;
 
 class Resume extends Model
@@ -17,26 +22,26 @@ class Resume extends Model
 
     public function certifications()
     {
-        return $this->hasMany('App\ResumeCertification');
+        return $this->hasMany(ResumeCertification::class);
     }
 
     public function companies()
     {
-        return $this->hasMany('App\ResumeCompany');
+        return $this->hasMany(ResumeCompany::class);
     }
 
     public function education()
     {
-        return $this->hasMany('App\ResumeEducation');
+        return $this->hasMany(ResumeEducation::class);
     }
 
     public function jobs()
     {
-        return $this->hasMany('App\ResumeJob');
+        return $this->hasMany(ResumeJob::class);
     }
 
     public function skills()
     {
-        return $this->hasMany('App\ResumeSkill');
+        return $this->hasMany(ResumeSkill::class);
     }
 }

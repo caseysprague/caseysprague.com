@@ -1,7 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Models\Resume;
 use Illuminate\Database\Eloquent\Model;
 
 class ResumeCertification extends Model
@@ -16,6 +17,6 @@ class ResumeCertification extends Model
 
     public function resume()
     {
-        return $this->hasOne('App\Resume');
+        return $this->hasOne(Resume::class);
     }
 }

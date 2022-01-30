@@ -1,5 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\WelcomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,8 +16,8 @@
 |
 */
 
-Route::get('/', 'WelcomeController@show');
-Route::get('/blog', 'BlogController@index');
-Route::get('/blog/{slug}', 'BlogController@show');
-Route::get('/resume/print', 'ResumeController@print');
-Route::get('/resume/download', 'ResumeController@download');
+Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/blog/{slug}', [BlogController::class, 'show']);
+Route::get('/resume/print', [ResumeController::class, 'print']);
+Route::get('/resume/download', [ResumeController::class, 'download']);

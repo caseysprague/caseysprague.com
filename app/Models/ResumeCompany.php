@@ -1,7 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Models\Resume;
+use App\Models\ResumeJob;
 use Illuminate\Database\Eloquent\Model;
 
 class ResumeCompany extends Model
@@ -16,12 +18,12 @@ class ResumeCompany extends Model
 
     public function resume()
     {
-        return $this->hasOne('App\Resume');
+        return $this->hasOne(Resume::class);
     }
 
     public function jobs()
     {
-        return $this->hasMany('App\ResumeJob', 'company_id');
+        return $this->hasMany(ResumeJob::class, 'company_id');
     }
 
     public function getStartedOnAttribute()

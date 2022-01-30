@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    @import '~highlight.js/styles/atom-one-dark.css';
+
+    .post-body {
+        @apply space-y-8;
+    }
+
+    .post-body > * > a {
+        @apply no-underline font-semibold text-blue-400 hover:text-blue-500;
+    }
+
+    .post-body > * > hr {
+        @apply border-t border-gray-200;
+    }
+
+    .post-body > blockquote {
+        @apply border-l-4 border-gray-200 pl-4 font-semibold;
+    }
+
+    .post-body > pre {
+        @apply font-mono overflow-x-auto text-sm text-gray-200 bg-gray-700 rounded-lg p-4;
+    }
+
+    .post-body > * > code {
+        @apply font-mono overflow-x-auto text-sm text-gray-200 bg-gray-700 rounded-lg px-3 py-2;
+    }
+
+    .post-body > h1 {
+        @apply text-2xl text-gray-700 font-extrabold mb-16;
+    }
+
+    .post-body > h2 {
+        @apply text-xl text-gray-700 font-extrabold my-12;
+    }
+
+    .post-body > h3 {
+        @apply text-lg text-gray-700 font-bold my-10;
+    }
+
+    .post-body > .embedded_image {
+        @apply space-y-2;
+    }
+
+    .post-body > .embedded_image[data-layout="wide"] {
+        @apply -mx-20 my-10;
+    }
+
+    .post-body > .embedded_image > p {
+        @apply text-gray-400 text-sm font-medium;
+    }
+}

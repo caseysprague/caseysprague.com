@@ -1,7 +1,9 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Models\Resume;
+use App\Models\ResumeCompany;
 use Illuminate\Database\Eloquent\Model;
 
 class ResumeJob extends Model
@@ -17,11 +19,11 @@ class ResumeJob extends Model
 
     public function resume()
     {
-        return $this->hasOne('App\Resume');
+        return $this->hasOne(Resume::class);
     }
 
     public function company()
     {
-        return $this->belongsTo('App\ResumeCompany');
+        return $this->belongsTo(ResumeCompany::class);
     }
 }
