@@ -25,7 +25,9 @@ class ResumeController extends Controller
 
     public function download()
     {
-        $browsershot = Browsershot::url('https://caseysprague.test/resume/print')
+        $url = route('print-resume');
+
+        $browsershot = Browsershot::url($url)
             ->margins(10, 10, 10, 10)
             ->showBackground()
             ->waitUntilNetworkIdle()
