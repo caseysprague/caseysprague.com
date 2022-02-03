@@ -19,5 +19,5 @@ use App\Http\Controllers\WelcomeController;
 Route::get('/', [WelcomeController::class, 'show']);
 Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/blog/{slug}', [BlogController::class, 'show']);
+Route::get('/resume', [ResumeController::class, 'show'])->name('resume');
 Route::get('/resume/print', [ResumeController::class, 'print'])->name('print-resume');
-Route::get('/resume/download', [ResumeController::class, 'download'])->name('download-resume');

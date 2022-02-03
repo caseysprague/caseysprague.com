@@ -26,7 +26,7 @@
                         @if($showBlog)
                         <a class="text-blue-400 hover:text-blue-500 no-underline" href="{{ url('/blog') }}">Blog</a>
                         @endif
-                        <a class="text-blue-400 hover:text-blue-500 no-underline" href="{{ url('/resume/download') }}">Resume</a>
+                        <a class="text-blue-400 hover:text-blue-500 no-underline" href="{{ route('resume') }}">Resume</a>
                         <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://github.com/caseysprague">GitHub</a>
                         <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://twitter.com/caseysprague">Twitter</a>
                         <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://www.linkedin.com/in/caseysprague">LinkedIn</a>

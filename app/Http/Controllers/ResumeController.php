@@ -11,20 +11,6 @@ class ResumeController extends Controller
 {
     public function show()
     {
-        return view('resume')->with([
-            Resume::first()
-        ]);
-    }
-
-    public function print()
-    {
-        return view('resume-print')->with([
-            'resume' => Resume::first(),
-        ]);
-    }
-
-    public function download()
-    {
         $url = route('print-resume');
 
         $browsershot = Browsershot::url($url)
@@ -42,5 +28,12 @@ class ResumeController extends Controller
         $download = false;
 
         return response($body, 200)->header('Content-Type', 'application/pdf')->header('Content-Disposition', $download ? "attachment; filename={$filename}.pdf" : "filename={$filename}.pdf");
+    }
+
+    public function print()
+    {
+        return view('resume-print')->with([
+            'resume' => Resume::first(),
+        ]);
     }
 }
