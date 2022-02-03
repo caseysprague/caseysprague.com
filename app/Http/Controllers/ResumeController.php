@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Resume;
+use App\Models\Resume;
 use Illuminate\Http\Request;
+use Spatie\Browsershot\Browsershot;
 use Illuminate\Support\Facades\Storage;
 
 class ResumeController extends Controller
@@ -24,6 +25,14 @@ class ResumeController extends Controller
 
     public function download()
     {
-        return Storage::disk('public')->download('Casey Sprague - Resume.pdf');
+        $browsershot = Browsershot::url('https://caseysprague.test/resume/print')
+            ->margins(10, 10, 10, 10)
+            ->showBackground()
+            ->waitUntilNetworkIdle()
+            ->base64pdf();
+
+        $body = base64_decode($browsershot);
+
+        return response($body, 200)->header('Content-Type', 'application/pdf');
     }
 }
