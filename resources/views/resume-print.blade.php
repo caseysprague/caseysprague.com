@@ -1,21 +1,17 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+@extends('layouts.app')
 
-        <title>{{ config('app.name') }} - Resume</title>
+@section('head')
+@parent
+<style type="text/css">
+    @media print {
+        .page-break {
+            page-break-after: always;
+        }
+    }
+</style>
+@endsection
 
-        <style type="text/css">
-            @media print {
-                .page-break {
-                    page-break-after: always;
-                }
-            }
-        </style>
-    </head>
+@section('body')
     <body class="px-8 text-sm text-gray-700 leading-normal antialiased">
         <div class="flex flex-col items-center border-b border-gray-100">
             @include('includes.logo')
@@ -103,4 +99,4 @@
         </div>
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
-</html>
+@endsection

@@ -28,6 +28,10 @@ class ResumeController extends Controller
         $url = route('print-resume');
 
         $browsershot = Browsershot::url($url)
+            ->addChromiumArguments([
+                'font-render-hinting' => 'none',
+                'force-color-profile' => 'srgb',
+            ])
             ->margins(10, 10, 10, 10)
             ->showBackground()
             ->waitUntilNetworkIdle()
