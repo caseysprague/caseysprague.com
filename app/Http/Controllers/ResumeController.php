@@ -38,7 +38,9 @@ class ResumeController extends Controller
             ->base64pdf();
 
         $body = base64_decode($browsershot);
+        $filename = config('app.name');
+        $download = false;
 
-        return response($body, 200)->header('Content-Type', 'application/pdf');
+        return response($body, 200)->header('Content-Type', 'application/pdf')->header('Content-Disposition', $download ? "attachment; filename={$filename}.pdf" : "filename={$filename}.pdf");
     }
 }
