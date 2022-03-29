@@ -29,7 +29,9 @@
             </div> --}}
             <div class="border-t-8 border-blue-400 flex flex-col items-center p-8 font-sans min-h-screen">
                 <div class="md:px-8 w-full max-w-xl">
-                    @include('includes.logo')
+                    <div class="mb-6">
+                        @include('includes.logo')
+                    </div>
                     <div class="mt-4 text-xs md:text-base space-x-4">
                         <a class="font-semibold text-gray-500 hover:text-blue-400 no-underline" href="{{ url('/') }}">Home</a>
                         <a class="font-semibold text-gray-500 hover:text-blue-400 no-underline" href="{{ url('/resume/download') }}">Resume</a>

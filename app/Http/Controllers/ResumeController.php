@@ -18,7 +18,7 @@ class ResumeController extends Controller
                 'font-render-hinting' => 'none',
                 'force-color-profile' => 'srgb',
             ])
-            ->margins(10, 10, 10, 10)
+            ->margins(10, 17.5, 10, 17.5) // Top, Right, Bottom, Left
             ->showBackground()
             ->waitUntilNetworkIdle()
             ->base64pdf();
