@@ -5,9 +5,12 @@ namespace App\Models;
 use App\Models\Resume;
 use App\Models\ResumeCompany;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ResumeJob extends Model
 {
+    use SoftDeletes;
+
     protected $casts = [
         'resume_id' => 'integer',
         'company_id' => 'integer',
