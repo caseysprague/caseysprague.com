@@ -1,4 +1,4 @@
-import './bootstrap';
+// import './bootstrap';
 
 /**
  * Enable syntax highlighting for code blocks.

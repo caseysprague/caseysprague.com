@@ -34,6 +34,6 @@
                 </div>
             </div>
         </div>
-        {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
+        {{-- @vite(['resources/js/app.js']) --}}
     </body>
 @endsection
