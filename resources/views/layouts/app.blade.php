@@ -10,6 +10,8 @@
 
         @vite(['resources/css/app.css'])
 
+        <script src="https://cdn.usefathom.com/script.js" data-site="PIYMUVZB" defer></script>
+
         @section('head')
         @show
     </head>
