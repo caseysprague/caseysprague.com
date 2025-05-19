@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('body')
-    <body class="text-sm text-gray-600 leading-normal antialiased space-y-10">
+    <body class="text-sm text-gray-600 antialiased space-y-10">
         <header class="flex flex-col items-center">
             @include('includes.logo')
         </header>
