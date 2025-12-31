@@ -10,7 +10,7 @@
                     </div>
                     <h2 class="mb-6 space-y-6 sm:space-y-4 md:space-y-2">
                         <p class="font-light text-xl sm:text-2xl text-gray-400">Developer, entrepreneur, investor. Code pilot. Actual pilot.</p>
-                        <p class="font-light text-base text-gray-400">Co-Founder, <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://reservoirwave.com">ReservoirWave</a> and <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://contractcardinal.com">Contract Cardinal</a>. Previously CTO & Technical Co-Founder, <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://www.thera-link.com">thera-LINK</a>.</p>
+                        <p class="font-light text-base text-gray-400">Co-Founder, <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://reservoirwave.com">ReservoirWave</a> and <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://contractcardinal.com">Contract Cardinal</a>. Founder, <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://lightning-link.com">Lightning-Link</a>. Previously CTO & Technical Co-Founder, <a class="text-blue-400 hover:text-blue-500 no-underline" href="https://www.thera-link.com">thera-LINK</a>.</p>
                     </h2>
                     <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
                         <a class="text-blue-400 hover:text-blue-500 no-underline" href="{{ route('resume') }}">Resume</a>
